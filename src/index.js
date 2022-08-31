@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 const morgan = require('morgan');
 const { mongoose } = require('../src/database/db.database')
-require('dotenv').config({ path: './.env' });
+//require('dotenv').config({ path: './.env' });
 const PORT = process.env.PORT || 3000;
 
 //Settings
