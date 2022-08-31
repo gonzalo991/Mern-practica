@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const controller = require('../controllers/tasks.controller');
+const controller = require('../../controllers/tasks.controller');
 
 //Metodo GET para acceder a una sola tarea por id
 router.get('/:id', controller.oneTask);

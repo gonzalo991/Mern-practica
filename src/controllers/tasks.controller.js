@@ -1,5 +1,5 @@
 const controller = {}
-const Task = require('../models/task.model');
+const Task = require('../src/models/task.model');
 
 controller.tasks = async (req, res) => {
     const tasks = await Task.find();
