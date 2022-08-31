@@ -1,13 +1,13 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
-const dotenv = require('dotenv');
+//const dotenv = require('dotenv');
 const PORT = process.env.PORT || 3000;
 const app = express();
 const {mongoose} = require('./src/database/db.database');
 
 //Settings
-dotenv.config({ path: './.env' }); //Acceso al archivo .env
+//dotenv.config({ path: './.env' }); //Acceso al archivo .env
 app.use(express.json()); //Acceso a datos en formato json
 
 //Middleware
